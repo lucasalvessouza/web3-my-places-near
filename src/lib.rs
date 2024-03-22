@@ -161,6 +161,47 @@ impl Contract {
             self.places.swap_remove(index as u64);
         }
     }
+
+    pub fn vote(&mut self, place_id: u64, vote: i8, feedback: Option<String>) {
+        if let Some(index) = self.places.iter().position(|place| place.id == place_id) {
+            let mut place = self.places.get(index as u64).unwrap() as Place;
+            let place_name = place.name.clone();
+            log_str(&format!("Processing vote for: {place_name} - {vote}"));
+
+            let voter = env::predecessor_account_id();
+            let previous_vote_index = place.votes.iter().position(|vote| vote.account_id == voter);
+
+            let new_vote = VoteMeta {
+                account_id: voter,
+                vote_value: vote,
+                feedback,
+            };
+            
+            // If user has voted already, just update its vote
+            if previous_vote_index.is_some() {
+                let vote_index = previous_vote_index.unwrap();
+                place.votes[vote_index] = new_vote;
+            } else {
+                // Add a new vote
+                place.votes.push(new_vote);
+                // Update place's votes_counter
+                place.votes_counter += 1;
+            }
+
+            // Update place's avarage of votes
+            let votes_length = place.votes.len();
+            let votes_sum = place
+                .votes
+                .iter()
+                .map(|vote_data| vote_data.vote_value)
+                .reduce(|value_a, value_b| value_a + value_b)
+                .unwrap();
+            place.avarage_votes = votes_sum / votes_length as i8;
+
+            // Update the place inside the stored places
+            self.places.replace(index as u64, &place);
+        }
+    }
 }
 
 

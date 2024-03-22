@@ -69,6 +69,31 @@ mod tests {
     }
 
     #[test]
+    fn vote_then_get_avarage() {
+        let mut contract = get_contract();
+        add_places_to_contract(&mut contract);
+
+        contract.vote(0, 5, Some("I've been asking for problems".to_string()));
+
+        assert_eq!(contract.get_place_by_id(0).unwrap().avarage_votes, 5);
+    }
+
+    #[test]
+    fn vote_twice_with_diff_values() {
+        let mut contract = get_contract();
+        add_places_to_contract(&mut contract);
+
+        contract.vote(
+            0,
+            2,
+            Some("Look me in the eyes, tell me what you see...".to_string()),
+        );
+        assert_eq!(contract.get_place_by_id(0).unwrap().avarage_votes, 2);
+        contract.vote(0, 5, Some("Now you know, you free to go!".to_string()));
+        assert_eq!(contract.get_place_by_id(0).unwrap().avarage_votes, 5);
+    }
+
+    #[test]
     fn remove_place() {
         let mut contract = get_contract();
         add_places_to_contract(&mut contract);
