@@ -67,4 +67,14 @@ mod tests {
         assert_eq!(place_0.pictures[2], pic_0);
         assert_eq!(place_0.pictures[3], pic_1);
     }
+
+    #[test]
+    fn remove_place() {
+        let mut contract = get_contract();
+        add_places_to_contract(&mut contract);
+
+        contract.remove_place(0);
+
+        assert_eq!(contract.get_places().len(), 0);
+    }
 }

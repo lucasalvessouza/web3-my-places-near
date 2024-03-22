@@ -144,10 +144,21 @@ impl Contract {
 
             let updated_places = vec![place.pictures, pictures].concat();
             place.pictures = updated_places;
-            let t = place.pictures[0].clone();
-            log_str(&format!("test: {t}"));
+
             // Update the place inside the stored places
             self.places.replace(index as u64, &place);
+        }
+    }
+
+    pub fn remove_place(&mut self, place_id: u64) {
+        assert!(
+            self.is_owner_or_admin(),
+            "Only the owner or admins can call this method"
+        );
+
+        log_str(&format!("Removing place where place_id is: {place_id}"));
+        if let Some(index) = self.places.iter().position(|place| place.id == place_id) {
+            self.places.swap_remove(index as u64);
         }
     }
 }
