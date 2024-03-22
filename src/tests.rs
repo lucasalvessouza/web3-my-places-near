@@ -42,4 +42,12 @@ mod tests {
         assert_eq!(places.len(), 1);
         assert_eq!(first_child.id, 0);
     }
+
+    #[test]
+    fn get_place_by_id() {
+        let mut contract = get_contract();
+        add_places_to_contract(&mut contract);
+        let place = contract.get_place_by_id(0).unwrap();
+        assert_eq!(place.id, 0);
+    }
 }

@@ -121,6 +121,14 @@ impl Contract {
     pub fn get_places(&self) -> Vec<Place> {
         return self.places.to_vec();
     }
+
+    pub fn get_place_by_id(&self, place_id: u64) -> Option<Place> {
+        if let Some(index) = self.places.iter().position(|place | place.id == place_id) {
+            self.places.get(index as u64)
+        } else {
+            None
+        }
+    }
 }
 
 
