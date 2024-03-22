@@ -130,6 +130,26 @@ impl Contract {
             None
         }
     }
+
+    pub fn add_picture_to_place(&mut self, place_id: u64, pictures: Vec<String>) {
+        assert!(
+            self.is_owner_or_admin(),
+            "Only the owner or admins can call this method"
+        );
+
+        if let Some(index) = self.places.iter().position(|place| place.id == place_id) {
+            let mut place = self.places.get(index as u64).unwrap() as Place;
+            let place_name = place.name.clone();
+            log_str(&format!("Adding pictures to: {place_name}"));
+
+            let updated_places = vec![place.pictures, pictures].concat();
+            place.pictures = updated_places;
+            let t = place.pictures[0].clone();
+            log_str(&format!("test: {t}"));
+            // Update the place inside the stored places
+            self.places.replace(index as u64, &place);
+        }
+    }
 }
 
 

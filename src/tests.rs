@@ -50,4 +50,21 @@ mod tests {
         let place = contract.get_place_by_id(0).unwrap();
         assert_eq!(place.id, 0);
     }
+
+    #[test]
+    fn update_place_pictures() {
+        let mut contract = get_contract();
+        add_places_to_contract(&mut contract);
+
+        let pic_0 = "https://lh5.googleusercontent.com/p/AF1QipMBMUOyXp7E1gZRB_KVeKLOLOpZv1bzZt-JxsAd=w408-h306-k-no".to_string();
+        let pic_1 = "https://www.meioemensagem.com.br/wp-content/uploads/2019/05/Natura_NovaLoja_Fachada_Credito_IlanaBessler_575.jpg".to_string();
+        let new_pictures = vec![pic_0.clone(), pic_1.clone()];
+
+        contract.add_picture_to_place(0, new_pictures);
+
+        let place_0 = contract.get_place_by_id(0).unwrap();
+
+        assert_eq!(place_0.pictures[2], pic_0);
+        assert_eq!(place_0.pictures[3], pic_1);
+    }
 }
