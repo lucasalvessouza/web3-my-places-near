@@ -1,1 +1,0 @@
-{"rustc":12595737599860400134,"features":"[]","target":8188216131759486267,"profile":13904479058746662784,"path":4249801706738303724,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/wee_alloc-41bcf3a83139446f/dep-build-script-build-script-build"}}],"rustflags":["-C","link-args=-s"],"metadata":11837593470300214873,"config":2202906307356721367,"compile_kind":0}
