@@ -1,0 +1,11 @@
+/Users/lucas/projects/web3-my-places-near/target/debug/deps/libed25519_dalek-d4faf8250a2593cd.rmeta: /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/lib.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/constants.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/keypair.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/errors.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/public.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/secret.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/signature.rs
+
+/Users/lucas/projects/web3-my-places-near/target/debug/deps/ed25519_dalek-d4faf8250a2593cd.d: /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/lib.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/constants.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/keypair.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/errors.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/public.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/secret.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/signature.rs
+
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/lib.rs:
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/constants.rs:
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/keypair.rs:
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/errors.rs:
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/public.rs:
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/secret.rs:
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ed25519-dalek-1.0.1/src/signature.rs:

@@ -1,0 +1,12 @@
+/Users/lucas/projects/web3-my-places-near/target/debug/deps/libcipher-5db023460f6301fa.rmeta: /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/lib.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/block.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/errors.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream_core.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream_wrapper.rs
+
+/Users/lucas/projects/web3-my-places-near/target/debug/deps/libcipher-5db023460f6301fa.rlib: /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/lib.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/block.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/errors.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream_core.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream_wrapper.rs
+
+/Users/lucas/projects/web3-my-places-near/target/debug/deps/cipher-5db023460f6301fa.d: /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/lib.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/block.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/errors.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream_core.rs /Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream_wrapper.rs
+
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/lib.rs:
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/block.rs:
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/errors.rs:
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream.rs:
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream_core.rs:
+/Users/lucas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cipher-0.4.4/src/stream_wrapper.rs:
